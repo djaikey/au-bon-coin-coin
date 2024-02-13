@@ -1,25 +1,29 @@
+*{
+   box-sizing: border-box; 
+}
 body{
- background-color: #B8CBD0;
+    margin: 0 auto;
+    max-width: 1440px;
+    
+    background-color:#B8CBD0 ;
+}
+a{
+    text-decoration: none;
+}
+footer{
+    width: 1440px;
+    height: 80px;
+    background-color: #344D59; 
 }
 .nav-barre{
-    margin-bottom:25px;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
     align-items: center;
-    justify-content: space-around;
-    background:#137C8B;
+    background-color: #137C8B;
 }
 .section-img{
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-bottom: 25px;
 }
-
-#canards-groupe{
-    margin: 50px;
-}
-.options-menu{
-    text-decoration: none;
-}
-
-
