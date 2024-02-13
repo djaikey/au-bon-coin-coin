@@ -9,14 +9,14 @@ body{
     justify-content: space-around;
     background:#137C8B;
 }
-
+.section-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 #canards-groupe{
     margin: 50px;
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    
 }
 .options-menu{
     text-decoration: none;
