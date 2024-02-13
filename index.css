@@ -1,0 +1,18 @@
+
+#canards-groupe{
+
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-barre{
+    margin-bottom:25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background:#137C8B 
+    
+};
+
