@@ -1,10 +1,5 @@
-
-#canards-groupe{
-
-    margin: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body{
+ background-color: #B8CBD0;
 }
 .nav-barre{
     margin-bottom:25px;
@@ -12,7 +7,19 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    background:#137C8B 
+    background:#137C8B;
+}
+
+
+#canards-groupe{
+    margin: 50px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
     
-};
+}
+.options-menu{
+    text-decoration: none;
+}
+
 
