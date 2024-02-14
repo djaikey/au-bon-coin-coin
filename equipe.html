@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="equipe.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Inspiration&family=Open+Sans:wght@300&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/746573b14e.js" crossorigin="anonymous"></script>
     <title>Au bon coin coin</title>
 </head>
@@ -34,13 +39,13 @@
         <!--Section 1 de la page comprenant la photo Canards de groupe-->
 
         <section class="section-img">
-            <img id="canards-groupe-equipe" src="asset/equipe-canards.png" alt="groupe canards">
+            <img id="canards-groupe-equipe" src="asset/lemagasin (2).png" alt="groupe canards">
         </section>
 
         <!--Section 2 Contiens le sous titre de la page et les cards des présentation des intervenants du projets-->
 
         <section class="section-equipe">
-            <h2>L'équipe derière le projet</h2>
+            <h2>L'équipe derrière le projet</h2>
 
             <!--Cards de l'équipe-->
 
@@ -50,22 +55,33 @@
                     <!--Card  partie 1 (visible) contenant image nom et nom du poste occupé -->
 
                     <img class="img-equipe" src="asset/Ellipse 1.png" alt="">
-                    <h3>Donald Code</h3>
-                    <p>Webcanard en charge du code</p>
+                    <h3 id="prenom1">Donald Code</h3>
+                    <h4 id="poste1">Webcanard en charge du code</h4>
+                    <p id="description1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua.</p>
                     <button id="modif-card-1"><i class="fa-solid fa-pen-to-square"></i></button>
 
                     <!--Card partie 2 (invisible) formulaire (modale?) permettant de modifier les informations -->
 
-                    <div id="form-modif-1">
+                    <div id="form-modif-1" style="display: none;">
                         <form class=" form" action="post">
+
+                            <!--Champs de donnée type "file" permettant d'importer une image-->
+
                             <label for="">Importer image</label>
                             <div id="image-prev"></div>
-                            <input type="file" id="selectioner" accept="image/jpg image/png" required ;><br>
+                            <input type="file" id="selection-file1" accept="image/jpg image/png" required ;><br>
+
+                            <!-- Champs de données type "string"-->
+
                             <label for="">Prénom</label>
-                            <input type="name">
+                            <input type="name" id="value-name1">
                             <label for="">Poste occupé</label>
-                            <input type="text">
-                            <input type="button" name="Valider" class="bouton-validation" value="Valider">
+                            <input type="text" id="value-poste1">
+                            <label for="text">déscription du poste</label>
+                            <input type="message" id="value-description1">
+                            <input type="button" name="Valider" id="bouton-validation1" value="Valider">
                         </form>
                     </div>
                 </div>
@@ -74,22 +90,33 @@
                     <!--Card  partie 1 (visible) contenant image nom et nom du poste occupé -->
 
                     <img class="img-equipe" src="asset/Ellipse 2.png" alt="">
-                    <h3>Picsou</h3>
-                    <p>PDG général canard en chef</p>
+                    <h3 id="prenom2">Picsou</h3>
+                    <h4 id="poste2">PDG canard en chef</h4>
+                    <p id="description2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua.</p>
                     <button id="modif-card-2"><i class="fa-solid fa-pen-to-square"></i></button>
 
                     <!--Card partie 2 (invisible) formulaire (modale?) permettant de modifier les informations -->
 
                     <div id="form-modif-2" style="display: none;">
                         <form class="form" action="post">
+
+                            <!--Champs de donnée type "file" permettant d'importer une image-->
+
                             <label for="">Importer image</label>
                             <div id="image-prev"></div>
-                            <input type="file" id="selectioner" accept="image/jpg image/png" required ;><br>
+                            <input type="file" id="selection-file2" accept="image/jpg image/png" required ;><br>
+
+                            <!-- Champs de données type "string"-->
+
                             <label for="">Prénom</label>
-                            <input type="name">
+                            <input type="name" id="value-name2">
                             <label for="">Poste occupé</label>
-                            <input type="text">
-                            <input type="button" name="Valider" class="bouton-validation" value="Valider">
+                            <input type="text" id="value-poste2">
+                            <label for="text">déscription du poste</label>
+                            <input type="text" id="value-description2">
+                            <input type="button" name="Valider" id="bouton-validation2" value="Valider">
                         </form>
                     </div>
                 </div>
@@ -98,23 +125,34 @@
                     <!--Card  partie 1 (visible) contenant image nom et nom du poste occupé -->
 
                     <img class="img-equipe" src="asset/Ellipse 3.png" alt="">
-                    <h3>Daisy Déssine</h3>
-                    <p>Directrice canartistique</p>
+                    <h3 id="prenom3">Daisy Déssine</h3>
+                    <h4 id="poste3">Directrice canartistique</h4>
+                    <p id="description3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut
+                        labore et dolore magna aliqua.</p>
                     <button id="modif-card-3"><i class="fa-solid fa-pen-to-square"></i></button>
 
                     <!--Card partie 2 (invisible) formulaire (modale?) permettant de modifier les informations -->
 
-                    <div id="form-modif-3" style="display: none;>
-                        <form class=" form" action="post">
+                    <div id="form-modif-3" style="display: none;">
+                        <form class="form" action="post">
 
-                        <label for="">Importer image</label>
-                        <div id="image-prev"></div>
-                        <input type="file" id="selectioner" accept="image/jpg image/png" required ;><br>
-                        <label for="">Prénom</label>
-                        <input type="name">
-                        <label for="">Poste occupé</label>
-                        <input type="text">
-                        <input type="button" name="Valider" class="bouton-validation" value="Valider">
+                            <!--Champs de donnée type "file" permettant d'importer une image-->
+
+                            <label for="img">Importer image</label>
+                            <div id="image-prev"></div>
+                            <input type="file" id="selection-file3" accept="image/jpg image/png" required ;><br>
+
+                            <!-- Champs de données type "string"-->
+
+                            <label for="">Prénom</label>
+                            <input type="name" id="value-name3">
+                            <label for="">Poste occupé</label>
+                            <input type="text" id="value-poste3">
+                            <label for="text">déscription du poste</label>
+                            <input type="text" id="value-description3">
+                            <input type="button" name="Valider" id="bouton-validation" value="Valider">
+
                         </form>
                     </div>
                 </div>
