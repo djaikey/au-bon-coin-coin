@@ -38,7 +38,24 @@
     align-items: center;
     gap: 10px;
 }
-#bouton-validation{
+
+#bouton-validation1{
+    width: 100px;
+    height: 40px;
+    border:solid 2px #137C8B;
+    border-radius:20px ;
+    background-color: #137C8B;
+    color: #fff;
+}
+#bouton-validation2{
+    width: 100px;
+    height: 40px;
+    border:solid 2px #137C8B;
+    border-radius:20px ;
+    background-color: #137C8B;
+    color: #fff;
+}
+#bouton-validation3{
     width: 100px;
     height: 40px;
     border:solid 2px #137C8B;
