@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="equipe.css">
+    <script src="https://kit.fontawesome.com/746573b14e.js" crossorigin="anonymous"></script>
     <title>Au bon coin coin</title>
 </head>
 
@@ -20,32 +21,102 @@
                     Au bon coin coin
                 </h1>
             </div>
+
+            <!--Options de la nav barre-->
+
             <a href="index.html">Menu</a>
             <a href="#">Equipe</a>
             <a href="cart.html">icone cart</a>
         </nav>
     </header>
     <main>
+
+        <!--Section 1 de la page comprenant la photo Canards de groupe-->
+
         <section class="section-img">
             <img id="canards-groupe-equipe" src="asset/equipe-canards.png" alt="groupe canards">
         </section>
+
+        <!--Section 2 Contiens le sous titre de la page et les cards des présentation des intervenants du projets-->
+
         <section class="section-equipe">
             <h2>L'équipe derière le projet</h2>
+
+            <!--Cards de l'équipe-->
+
             <div id="cards">
                 <div class="card-equipe">
+
+                    <!--Card  partie 1 (visible) contenant image nom et nom du poste occupé -->
+
                     <img class="img-equipe" src="asset/Ellipse 1.png" alt="">
                     <h3>Donald Code</h3>
                     <p>Webcanard en charge du code</p>
+                    <button id="modif-card-1"><i class="fa-solid fa-pen-to-square"></i></button>
+
+                    <!--Card partie 2 (invisible) formulaire (modale?) permettant de modifier les informations -->
+
+                    <div id="form-modif-1">
+                        <form class=" form" action="post">
+                            <label for="">Importer image</label>
+                            <div id="image-prev"></div>
+                            <input type="file" id="selectioner" accept="image/jpg image/png" required ;><br>
+                            <label for="">Prénom</label>
+                            <input type="name">
+                            <label for="">Poste occupé</label>
+                            <input type="text">
+                            <input type="button" name="Valider" class="bouton-validation" value="Valider">
+                        </form>
+                    </div>
                 </div>
                 <div class="card-equipe">
+
+                    <!--Card  partie 1 (visible) contenant image nom et nom du poste occupé -->
+
                     <img class="img-equipe" src="asset/Ellipse 2.png" alt="">
                     <h3>Picsou</h3>
                     <p>PDG général canard en chef</p>
+                    <button id="modif-card-2"><i class="fa-solid fa-pen-to-square"></i></button>
+
+                    <!--Card partie 2 (invisible) formulaire (modale?) permettant de modifier les informations -->
+
+                    <div id="form-modif-2" style="display: none;">
+                        <form class="form" action="post">
+                            <label for="">Importer image</label>
+                            <div id="image-prev"></div>
+                            <input type="file" id="selectioner" accept="image/jpg image/png" required ;><br>
+                            <label for="">Prénom</label>
+                            <input type="name">
+                            <label for="">Poste occupé</label>
+                            <input type="text">
+                            <input type="button" name="Valider" class="bouton-validation" value="Valider">
+                        </form>
+                    </div>
                 </div>
                 <div class="card-equipe">
+
+                    <!--Card  partie 1 (visible) contenant image nom et nom du poste occupé -->
+
                     <img class="img-equipe" src="asset/Ellipse 3.png" alt="">
                     <h3>Daisy Déssine</h3>
                     <p>Directrice canartistique</p>
+                    <button id="modif-card-3"><i class="fa-solid fa-pen-to-square"></i></button>
+
+                    <!--Card partie 2 (invisible) formulaire (modale?) permettant de modifier les informations -->
+
+                    <div id="form-modif-3" style="display: none;>
+                        <form class=" form" action="post">
+
+                        <label for="">Importer image</label>
+                        <div id="image-prev"></div>
+                        <input type="file" id="selectioner" accept="image/jpg image/png" required ;><br>
+                        <label for="">Prénom</label>
+                        <input type="name">
+                        <label for="">Poste occupé</label>
+                        <input type="text">
+                        <input type="button" name="Valider" class="bouton-validation" value="Valider">
+                        </form>
+                    </div>
                 </div>
 
             </div>
@@ -53,6 +124,7 @@
 
     </main>
     <footer></footer>
+    <script src="equipe.js"></script>
 </body>
 
 </html>

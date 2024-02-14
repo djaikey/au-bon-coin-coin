@@ -4,16 +4,27 @@
 body{
     margin: 0 auto;
     max-width: 1440px;
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color:#B8CBD0 ;
 }
 a{
     text-decoration: none;
+    color: #fff;
+    
 }
-footer{
-    width: 1440px;
-    height: 80px;
-    background-color: #344D59; 
+button{
+    width: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    border:solid 2px #137C8B;
+    border-radius:20px ;
+    background-color: #137C8B;
+    color: #fff;
 }
 .nav-barre{
     display: flex;
@@ -21,9 +32,12 @@ footer{
     margin-bottom: 25px;
     align-items: center;
     background-color: #137C8B;
+    color: #fff;
 }
 .section-img{
     display: flex;
     justify-content: center;
     margin-bottom: 25px;
 }
+
+
