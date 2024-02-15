@@ -44,12 +44,9 @@ modifButton1.addEventListener("click", (e) => {
     formulaireModif1.style.display = "block";
 });
     
-
-
 modifButton2.addEventListener("click", (e) => {
     formulaireModif2.style.display = "block";
 });
-
 
 modifButton3.addEventListener("click", (e) => {
     formulaireModif3.style.display = "block";
@@ -58,56 +55,64 @@ modifButton3.addEventListener("click", (e) => {
 
 /**Boutons validations des formulaires */
 
-
 validerForm1.addEventListener("click", (e) => {
-   // Récupérer les valeurs des champs
-    let image1 = document.getElementById("selection-file1").files[0]; 
+    e.preventDefault()
+
+    /** Récupérer les valeurs des champs*/
+    
     let prenom1 = document.getElementById("value-name1").value;
-    let poste1 = document.getElementById("value-poste1").value; 
+    let poste1 = document.getElementById("value-poste1").value;
     let description1 = document.getElementById("value-description1").value;
 
     /**retourner les valeures */
     
-    console.log("Image:", image1);
     dataPrenom1.innerText = prenom1;
     dataPoste1.innerText = poste1;
     dataDescription1.innerText = description1;
+
+    /**fermetur du formulair*/
+
     formulaireModif1.style.display = "none";
-})
+});
 
 validerForm2.addEventListener("click", (e) => {
-    //Récupérer les valeurs des champs
-
-    // let prenom 2
-    let image2 = document.getElementById("selection-file2").files[0];
+    e.preventDefault()
+    
     let prenom2 = document.getElementById("value-name2").value;
     let poste2 = document.getElementById("value-poste2").value; 
     let description2 = document.getElementById("value-description2").value;
 
-    /**retourner les valeures */
+    /** injecter les valeures dans les balises html correspondante */
     
-    console.log("Image:", image2);
+    
     dataPrenom2.innerText = prenom2;
     dataPoste2.innerText = poste2;
     dataDescription2.innerText = description2;
+
+    /** fermeture du formulaire*/
+
     formulaireModif2.style.display = "none";
 })
 
 validerForm3.addEventListener("click", (e) => {
-    // Récupérer les valeurs des champs
-     let image3 = document.getElementById("selection-file1").files[0]; 
-     let prenom3 = document.getElementById("value-name1").value;
-     let poste3 = document.getElementById("value-poste1").value; 
-     let description3 = document.getElementById("value-description1").value;
+    e.preventDefault()
+
+    /**  Récupérer les valeurs des champs */
+
+    let prenom3 = document.getElementById("value-name1").value;
+    let poste3 = document.getElementById("value-poste1").value; 
+    let description3 = document.getElementById("value-description1").value;
  
-     /**retourner les valeures */
+    /**injecter les valeures dans les balises html correspondante */
      
-     console.log("Image:", image3);
-     dataPrenom3.innerText = prenom3;
-     dataPoste3.innerText = poste3;
-     dataDescription3.innerText = description3;
-     formulaireModif3.style.display = "none";
- })
+    dataPrenom3.innerText = prenom3;
+    dataPoste3.innerText = poste3;
+    dataDescription3.innerText = description3;
+    
+    /** fermeture du formulaire*/
+
+    formulaireModif3.style.display = "none";
+})
 
 /**Annulation de l'envoie et fermeture du formulaire */
 
@@ -123,7 +128,4 @@ annulation3.addEventListener("click", (e) => {
     formulaireModif3.style.display = "none";
 })
 
-/**Fonctions gestion des formulaire */
-
-
-
+/*Fonctions gestion des formulaire */
