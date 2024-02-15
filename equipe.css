@@ -96,6 +96,9 @@ button{
 }
 .img-equipe{
     max-width: 200px;
+    border-radius: 100%;
+    box-shadow: 0px 5px 15px 0px #344D59;
+
 }
 .form{
     margin: 0;
