@@ -1,8 +1,9 @@
+/**/
+
 html, body
 {
 	padding: 0;
 	margin: 0;
-    font-family: "public" sans-serif;
 	background-color: #B8CBD0;
 	-ms-overflow-style: none;  /* IE and Edge */
 	scrollbar-width: none;
@@ -20,6 +21,7 @@ html::-webkit-scrollbar, body::-webkit-scrollbar
     background:#137C8B;
 	height: 111px;
 }
+
 h2{
     color: #137C8B;
 }
@@ -43,21 +45,15 @@ button{
     background-color: #137C8B;
     color: #fff;
 }
-.nav-barre{
-    
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-    align-items: center;
-    background-color: #137C8B;
-    color: #fff;
-}
+
 .section-img{
     display: flex;
     justify-content: center;
     margin: 25px;
     padding: 25px;
 }
+
+
 #canards_groupe
 {
     display: flex;
@@ -66,6 +62,7 @@ button{
 	box-shadow: 0 5px 15px #344D59;
 	border-radius: 25px;
 }
+
 
 .section-equipe{
     display: flex;
@@ -113,27 +110,4 @@ button{
     gap: 10px;
 }
 
-#bouton-validation1{
-    width: 100px;
-    height: 40px;
-    border:solid 2px #137C8B;
-    border-radius:20px ;
-    background-color: #137C8B;
-    color: #fff;
-}
-#bouton-validation2{
-    width: 100px;
-    height: 40px;
-    border:solid 2px #137C8B;
-    border-radius:20px ;
-    background-color: #137C8B;
-    color: #fff;
-}
-#bouton-validation3{
-    width: 100px;
-    height: 40px;
-    border:solid 2px #137C8B;
-    border-radius:20px ;
-    background-color: #137C8B;
-    color: #fff;
-}
+
