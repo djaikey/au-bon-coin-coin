@@ -99,9 +99,9 @@ validerForm3.addEventListener("click", (e) => {
 
     /**  Récupérer les valeurs des champs */
 
-    let prenom3 = document.getElementById("value-name1").value;
-    let poste3 = document.getElementById("value-poste1").value; 
-    let description3 = document.getElementById("value-description1").value;
+    let prenom3 = document.getElementById("value-name3").value;
+    let poste3 = document.getElementById("value-poste3").value; 
+    let description3 = document.getElementById("value-description3").value;
  
     /**injecter les valeures dans les balises html correspondante */
      
