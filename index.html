@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="index.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inspiration&family=Open+Sans:wght@300&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="index.js"></script>
+		<script src="https://kit.fontawesome.com/746573b14e.js" crossorigin="anonymous"></script>
+		<title>Au bon coin coin</title>
+	</head>
+	<body>
+		<header>
+			<nav class="nav_barre">
+				<div class="center">
+					<p class="logo">🦆</p>
+					<p class="nom_site">Au bon<br>coin-coin</p>
+				</div>
+				<a class="options_menu" href="#">Menu</a>
+				<a class="options_menu" href="#">Équipe</a>
+				<a class="options_menu" href="#"><i class="fa-solid fa-cart-arrow-down"></i></a>
+			</nav>
+		</header>
+		<main>
+			<table width="100%" cellpadding="0" cellspacing="0" style="float:left;"><tr><td align="center" class="rembourrage">
+				<img id="canards_groupe" src="asset/lemagasin.new.png" alt="groupe canards" width="auto">
+				<h2>Bienvenue au bon coin-coin ! Trouvez le canard qu'il vous faut</h2>
+			</td>
+			<td id="vollet" style="display:none;" rowspan="2" class="aside">
+				<div class="panier" id="panier"></div>
+			</td></tr>
+			<tr><td align="center" style="padding: 25px">
+				<div class="articles">
+					<ul>
+						<li>
+							<img src="asset/affaire.png" class="bordure" width="144px" height="135px" alt="Canard d'affaire" />
+							<div>
+								<p>Canard d'affaire</p>
+								<p>119,99 €</p>
+								<form method="post" id="ajout_affaire">Quantité : <input class="qte" name="qte" type="number" min="1" max="15" value="1" />
+								<input class="ajout_liste" type="submit" value="Ajouter" name="submit"></form>
+								<hr noshade="noshade" size="1px">
+								<p>Révolutionne le monde des canards</p>
+							</div>
+						</li>
+						<li>
+							<img src="asset/gamer.png" class="bordure" width="144px" height="135px" alt="Canard gamer" />
+							<div>
+								<p>Canard gamer</p>
+								<p>$50</p>
+								<form method="post" id="ajout_gamer">Quantité : <input class="qte" name="qte" type="number" min="1" max="15" value="1" />
+								<input class="ajout_liste" type="submit" value="Ajouter" name="submit"></form>
+								<hr noshade="noshade" size="1px">
+								<p>Trop occupé pour se rendre compte de votre présence</p>
+							</div>
+						</li>
+						<li>
+							<img src="asset/francais.png" class="bordure" width="144px" height="135px" alt="Canard français" />
+							<div>
+								<p>Canard français</p>
+								<p>30 €</p>
+								<form method="post" id="ajout_francais">Quantité : <input class="qte" name="qte" type="number" min="1" max="15" value="1" />
+								<input class="ajout_liste" type="submit" value="Ajouter" name="submit"></form>
+								<hr noshade="noshade" size="1px">
+								<p>"Baguette !"</p>
+							</div>
+						</li>
+						<li>
+							<img src="asset/poilu.png" class="bordure" width="144px" height="135px" alt="Canard poilu" />
+							<div>
+								<p>Canard poilu</p>
+								<p>50 €</p>
+								<form method="post" id="ajout_poilu">Quantité : <input class="qte" name="qte" type="number" min="1" max="15" value="1" />
+								<input class="ajout_liste" type="submit" value="Ajouter" name="submit"></form>
+								<hr noshade="noshade" size="1px">
+								<p>Un canard poilant</p>
+							</div>
+						</li>
+						<li>
+							<img src="asset/normal.png" class="bordure" width="144px" height="135px" alt="Canard normal" />
+							<div>
+								<p>Canard normal</p>
+								<p>$50</p>
+								<form method="post" id="ajout_normal">Quantité : <input class="qte" name="qte" type="number" min="1" max="15" value="1" />
+								<input class="ajout_liste" type="submit" value="Ajouter" name="submit"></form>
+								<hr noshade="noshade" size="1px">
+								<p>Pour ceux qui aiment la simplicité</p>
+							</div>
+						</li>
+						<li>
+							<img src="asset/helico.png" class="bordure" width="144px" height="135px" alt="Canard hélico" />
+							<div>
+								<p>Canard hélico</p>
+								<p>$50</p>
+								<form method="post" id="ajout_helico">Quantité : <input class="qte" name="qte" type="number" min="1" max="15" value="1" />
+								<input class="ajout_liste" type="submit" value="Ajouter" name="submit"></form>
+								<hr noshade="noshade" size="1px">
+								<p>Toujours prêt pour un petit tour dans les airs</p>
+							</div>
+						</li>
+						<li>
+							<img src="asset/italien.png" class="bordure" width="144px" height="135px" alt="Canard italien" />
+							<div>
+								<p>Canard italien</p>
+								<p>50 €</p>
+								<form method="post" id="ajout_italien">Quantité : <input class="qte" name="qte" type="number" min="1" max="15" value="1" />
+								<input class="ajout_liste" type="submit" value="Ajouter" name="submit"></form>
+								<hr noshade="noshade" size="1px">
+								<p>"La pizza !"</p>
+							</div>
+						</li>
+						<li>
+							<img src="asset/poussin.png" class="bordure" width="144px" height="135px" alt="Le poussin piou" />
+							<div>
+								<p>Le poussin piou</p>
+								<p>$50</p>
+								<form method="post" id="ajout_poussin">Quantité : <input class="qte" name="qte" type="number" min="1" max="15" value="1" />
+								<input class="ajout_liste" type="submit" value="Ajouter" name="submit"></form>
+								<hr noshade="noshade" size="1px">
+								<p>Le roi des DJ de la ferme</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</td></tr></table>
+			<!-- <div id="vollet" style="display:none;float:right" class="aside"> -->
+				<!-- <div class="panier" id="panier"></div> -->
+			<!-- </div> -->
+		</main>
+		<footer>
+			<p>Police des Cannards © 2024, tous droits reservés</p>
+		</footer>
+	</body>
+</html>
