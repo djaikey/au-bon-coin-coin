@@ -22,8 +22,8 @@
                 <p class="logo">🦆</p>
                 <p class="nom_site">Au bon<br>coin-coin</p>
             </div>
-            <a class="options_menu" href="#">Menu</a>
-            <a class="options_menu" href="equipe.html">Équipe</a>
+            <a class="options_menu" href="index.html">La boutique</a>
+            <a class="options_menu" href="equipe.html">L'équipe</a>
             <a class="options_menu" href="cart.html"><i class="fa-solid fa-cart-arrow-down"></i></a>
         </nav>
     </header>
@@ -44,7 +44,7 @@
 
             <div id="cards">
 
-                <div>
+                <div class="Card">
                     <div class="card-equipe">
 
                         <!--Card  partie 1 (visible) contenant image nom et nom du poste occupé -->
@@ -68,7 +68,7 @@
                             <!-- Champs de données type "string"-->
 
                             <label for="">Prénom</label>
-                            <input type="name" id="value-name1">
+                            <input type="name" name="usename" id="value-name1">
                             <label for="">Poste occupé</label required>
                             <input type="text" id="value-poste1" required>
                             <label for="text">déscription du poste</label>
@@ -153,12 +153,50 @@
                 </div>
             </div>
         </section>
+        <section class="ajout">
+            <div class="card-equipe">
+
+                <!--Card  partie 1 (visible) contenant image nom et nom du poste occupé -->
+
+                <img id="image-Url" class="img-equipe"
+                    src="https://cdn.pixabay.com/photo/2019/12/07/14/57/rubber-4679464_640.png" alt="">
+                <h3 id="prenom">Prénom</h3>
+                <h4 id="poste">Poste ocupé</h4>
+                <p id="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor
+                    incididunt ut
+                    labore et dolore magna aliqua.</p>
+                <button id="modif-card-"><i class="fa-solid fa-pen-to-square"></i></button>
+
+            </div>
+
+            <!--Card partie 2 (invisible) formulaire (modale?) permettant de modifier les informations -->
+
+            <div id="form-modif-" style="display: none;">
+                <form class=" form">
+
+                    <!-- Champs de données type "string"-->
+                    <label for="url">Url de l'image</label>
+                    <input type="text" required>
+                    <label for="">Prénom</label>
+                    <input type="name" id="value-name">
+                    <label for="">Poste occupé</label required>
+                    <input type="text" id="value-poste" required>
+                    <label for="text">déscription du poste</label>
+                    <input type="message" id="value-description" required>
+                    <input type="submit" name="Valider" id="bouton-validation" value="Valider">
+                    <p id="annulation">annuler</p>
+
+                </form>
+            </div>
+        </section>
 
     </main>
     <footer>
         <p>Police des Canards © 2024, tous droits reservés</p>
     </footer>
     <script src="equipe.js"></script>
+    <script src="create.js"></script>
 </body>
 
 </html>

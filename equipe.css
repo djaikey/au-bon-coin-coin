@@ -98,6 +98,7 @@ button{
 
 }
 .form{
+    max-width: 300px;
     margin: 0;
     padding: 10px;
     border:solid 2px #137C8B;
