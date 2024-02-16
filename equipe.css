@@ -64,7 +64,7 @@ button{
 }
 
 
-.section-equipe{
+.section-equipe {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -111,4 +111,14 @@ button{
     gap: 10px;
 }
 
-
+#ajouter{
+    width: 90px;
+    height: 60px;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    border:solid 2px #137C8B;
+    border-radius:20px ;
+    background-color: #137C8B;
+    color: #fff;
+}
