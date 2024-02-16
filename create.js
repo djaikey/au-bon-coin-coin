@@ -7,7 +7,18 @@ const dataDescription4 = document.getElementById("description4");
 const annulation4 = document.getElementById("annulation4");
 const imagePrev4 =document.getElementById("img-prev4");
 
+const boutonAjouter = document.getElementById("ajouter");
+boutonAjouter.addEventListener("click", (e) => {
+    e.preventDefault()
+    const Card4 = document.getElementById("creation4");
+    const Card5 = document.getElementById("creation5");
+    
+    Card4.style.display = "block";
+    Card5.style.display = "block";
+   
+   
 
+})
 
 modifButton4.addEventListener("click", (e) => {
     formulaireModif4.style.display = "block";
@@ -35,7 +46,8 @@ validerForm4.addEventListener("click", (e) => {
     dataDescription4.innerText = description4;
 
     /**fermetur du formulair*/
-
+    Card4.style.display = "block";
+    Card5.style.display = "none";
     formulaireModif4.style.display = "none";
 });
 
@@ -82,7 +94,7 @@ validerForm5.addEventListener("click", (e) => {
     dataDescription5.innerText = description5;
 
     /**fermetur du formulair*/
-
+    Card5.style.display = "block";
     formulaireModif5.style.display = "none";
 });
 
@@ -92,48 +104,8 @@ annulation5.addEventListener("click", (e) => {
 })
 
 
-const modifButton6 = document.getElementById("modif-card6");
-const validerForm6 = document.getElementById("bouton-validation6")
-const formulaireModif6 = document.getElementById("form-modif6");
-const dataPrenom6 = document.getElementById("prenom6");
-const dataPoste6 = document.getElementById("poste6");
-const dataDescription6 = document.getElementById("description6");
-const annulation6 = document.getElementById("annulation6");
-const imagePrev6 =document.getElementById("img-prev6");
+;
 
 
 
-modifButton6.addEventListener("click", (e) => {
-    formulaireModif6.style.display = "block";
-});
 
-
-
-validerForm6.addEventListener("click", (e) => {
-    e.preventDefault()
-
-    /** Récupérer les valeurs des champs*/
-    let imageUrl6 = document.getElementById("image-Url6").value;
-    let prenom6 = document.getElementById("value-name6").value;
-    let dataPoste6 = document.getElementById("value-poste6").value;
-    let description6 = document.getElementById("value-description6").value;
-
-
-
-    /**retourner les valeures */
-    console.log(imageUrl6);
-    imagePrev6.setAttribute("src", imageUrl6);
-    dataPrenom6.innerText = prenom6;
-    dataPoste6.innerText = poste6;
-    console.log(dataDescription6);
-    dataDescription6.innerText = description6;
-
-    /**fermetur du formulair*/
-
-    formulaireModif6.style.display = "none";
-});
-
-
-annulation6.addEventListener("click", (e) => {
-    formulaireModif6.style.display = "none";
-})

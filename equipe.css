@@ -4,6 +4,7 @@ html, body
 {
 	padding: 0;
 	margin: 0;
+    font-family: "Public Sans", sans-serif;
 	background-color: #B8CBD0;
 	-ms-overflow-style: none;  /* IE and Edge */
 	scrollbar-width: none;
@@ -32,6 +33,7 @@ a{
     
 }
 p{
+    text-align: center;
     cursor: default;
 }
 button{
@@ -101,7 +103,7 @@ button{
 }
 .form{
     max-width: 300px;
-    margin: 0;
+    margin:25px ;
     padding: 10px;
     border:solid 2px #137C8B;
     border-radius: 10%;
