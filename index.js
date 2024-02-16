@@ -60,25 +60,3 @@ function ajouter(qte,type)
 	console.log(article);
 }
 
-/*
- <button id="ajouter">
-                    <i class="fa-solid fa-plus"></i>
-                    <p>ajouter un membre</p>
-                </button>
-
-				<div style="width:100%">
-					<img src="asset/article1.png" alt="Canard savant" />
-					<div>
-						<p>Canard savant</p>
-						<p>Quantité X</p>
-					</div>
-				</div>
-				<hr noshade="noshade" size="2px" color="white">
-				<div style="width:100%">
-					<img src="asset/article1.png" alt="Canard savant" />
-					<div>
-						<p>Canard savant</p>
-						<p>Quantité X</p>
-					</div>
-				</div>
-*/
