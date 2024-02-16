@@ -1,9 +1,11 @@
 const modifButton = document.getElementById("modif-card-");
+const validerForm = document.getElementById("bouton-validation")
 const formulaireModif = document.getElementById("form-modif-");
-const dataImage =document.getElementById("image-url");
 const dataPrenom = document.getElementById("prenom");
+const dataPoste = document.getElementById("poste");
 const dataDescription = document.getElementById("description");
 const annulation = document.getElementById("annulation");
+const imagePrev =document.getElementById("img-prev");
 
 
 
@@ -25,9 +27,11 @@ validerForm.addEventListener("click", (e) => {
 
 
     /**retourner les valeures */
-    dataImage.src= imageUrl;
+    console.log(imageUrl);
+    imagePrev.setAttribute("src", imageUrl);
     dataPrenom.innerText = prenom;
     dataPoste.innerText = poste;
+    console.log(dataDescription);
     dataDescription.innerText = description;
 
     /**fermetur du formulair*/

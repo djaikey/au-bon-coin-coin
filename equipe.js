@@ -19,6 +19,9 @@ const formulaireModif2 = document.getElementById("form-modif-2");
 const formulaireModif3 = document.getElementById("form-modif-3");
 
 /**destination des données des formulaires */
+const imagePrev1 = document.getElementById("img-prev1");
+const imagePrev2 = document.getElementById("img-prev2");
+const imagePrev3 =document.getElementById("img-prev3");
 
 const dataPrenom1 = document.getElementById("prenom1");
 const dataPrenom2 = document.getElementById("prenom2");
@@ -27,6 +30,12 @@ const dataPrenom3 = document.getElementById("prenom3");
 const dataPoste1 = document.getElementById("poste1");
 const dataPoste2 = document.getElementById("poste2");
 const dataPoste3 = document.getElementById("poste3");
+
+const dataImage1 = document.getElementById("image-Url1");
+const dataImage2 = document.getElementById("image-Url2");
+const dataImage3 = document.getElementById("image-Url3");
+
+
 
 const dataDescription1 = document.getElementById("description1");
 const dataDescription2 = document.getElementById("description2");
@@ -59,13 +68,13 @@ validerForm1.addEventListener("click", (e) => {
     e.preventDefault()
 
     /** Récupérer les valeurs des champs*/
-    
+    let imageUrl1=document.getElementById("image-url1").value;
     let prenom1 = document.getElementById("value-name1").value;
     let poste1 = document.getElementById("value-poste1").value;
     let description1 = document.getElementById("value-description1").value;
 
     /**retourner les valeures */
-    
+    imagePrev1.setAttribute("src", imageUrl1);
     dataPrenom1.innerText = prenom1;
     dataPoste1.innerText = poste1;
     dataDescription1.innerText = description1;
@@ -77,14 +86,14 @@ validerForm1.addEventListener("click", (e) => {
 
 validerForm2.addEventListener("click", (e) => {
     e.preventDefault()
-    
+    let imageUrl2=document.getElementById("image-url2").value;
     let prenom2 = document.getElementById("value-name2").value;
     let poste2 = document.getElementById("value-poste2").value; 
     let description2 = document.getElementById("value-description2").value;
 
     /** injecter les valeures dans les balises html correspondante */
     
-    
+    imagePrev2.setAttribute("src", imageUrl2);
     dataPrenom2.innerText = prenom2;
     dataPoste2.innerText = poste2;
     dataDescription2.innerText = description2;
@@ -98,13 +107,13 @@ validerForm3.addEventListener("click", (e) => {
     e.preventDefault()
 
     /**  Récupérer les valeurs des champs */
-
+    let imageUrl3=document.getElementById("image-url3").value;
     let prenom3 = document.getElementById("value-name3").value;
     let poste3 = document.getElementById("value-poste3").value; 
     let description3 = document.getElementById("value-description3").value;
  
     /**injecter les valeures dans les balises html correspondante */
-     
+    imagePrev3.setAttribute("src", imageUrl3); 
     dataPrenom3.innerText = prenom3;
     dataPoste3.innerText = poste3;
     dataDescription3.innerText = description3;
