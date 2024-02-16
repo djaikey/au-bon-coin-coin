@@ -137,4 +137,23 @@ annulation3.addEventListener("click", (e) => {
     formulaireModif3.style.display = "none";
 })
 
-/*Fonctions gestion des formulaire */
+/*adaptation de la taille de la nav */
+
+var canards_groupe = document.getElementById("canards_groupe");
+largeur_ecran();
+window.onresize = function () { largeur_ecran(); }
+    
+function largeur_ecran()
+{ 
+	if (document.body) 
+	{ 
+		if (document.body.clientWidth >= 1336) 
+		{
+			canards_groupe.setAttribute("width","auto");
+		} 
+		else 
+		{
+			canards_groupe.setAttribute("width","100%");
+		}
+	} 
+}
