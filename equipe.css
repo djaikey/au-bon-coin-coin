@@ -31,7 +31,9 @@ a{
     color: #fff;
     
 }
-
+p{
+    cursor: default;
+}
 button{
     margin: 15px;
     width: 40px;
