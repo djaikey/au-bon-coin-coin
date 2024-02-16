@@ -2,6 +2,8 @@ html, body {
 	padding: 0;
 	margin: 0;
 	background-color: #B8CBD0;
+	
+	font-family: "Public Sans",sans-serif;
 }
 /*header*/
 .nav-barre{
@@ -35,7 +37,7 @@ html, body {
 	font-family: "Public Sans",sans-serif;
 	font-size: 40px;
 }
-.nav_barre a:last-child {
+.nav-barre a:last-child {
 	font-size: 64px !important;
 }
 /*image presentation*/
@@ -83,7 +85,7 @@ table img {
     width: 80px;
     height: 80px;
 }
-#img-cannard {
+#img-canard {
     text-align: center;
 }
 /*ligne 1*/

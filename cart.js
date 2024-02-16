@@ -220,3 +220,26 @@ function toggleDisplay() {
     }
     document.getElementById('deletall3').style.display = 'block';
 }
+
+// Adaptation de l'image selon la taille de l'écran du client
+var canards_groupe = document.getElementById("canards-groupe-cart");
+largeur_ecran();
+
+// Quand la fenêtre change de taille, on revérifie que les tailles sont bonnes
+window.onresize = function() { largeur_ecran(); }
+
+// Fonction pour modifier la largeur de la bannière
+function largeur_ecran()
+{ 
+	if (document.body) 
+	{ 
+		if (document.body.clientWidth >= 1336) 
+		{
+			canards_groupe.setAttribute("width","auto");
+		} 
+		else 
+		{
+			canards_groupe.setAttribute("width","100%");
+		}
+	} 
+}
